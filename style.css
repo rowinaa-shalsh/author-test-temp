@@ -1,0 +1,94 @@
+/* start rules */
+:root{
+    --prim-color:#051441;
+    --green-color:#17b978;
+    --text-color:#6a7965;
+    --box-color:#f5f4fb;
+    --box-shado:#0000003b 0px 0px 12px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+width: 100%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+ }
+ p{
+    color: #6a7965;
+}
+ /* end rules */
+
+ /* start nav */
+  nav.navbar{
+   box-shadow: var(--box-shado);
+  }
+  nav.navbar .navbar-brand{
+    color: var(--prim-color);
+    font-weight: 800;
+    font-size: 28px;
+  }
+  nav.navbar .navbar-brand span{
+    color: #17b978;
+  }
+  nav.navbar .nav-pills .nav-item .nav-link{
+    color:var(--prim-color);
+    font-size: 18px;
+    padding: 5px 20px;
+    position: relative;
+  }
+  nav.navbar .nav-pills .nav-item .nav-link{
+ color:#051441;
+ transition: 0.3s;
+
+  }
+  nav.navbar .nav-pills .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--green-color);
+    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+  }
+  nav.navbar .nav-pills .nav-item .nav-link:hover,
+  nav.navbar .nav-pills .nav-item .nav-link .active {
+    color: #17b978;
+    background: unset;
+  }
+  nav.navbar .nav-pills .nav-item .nav-link:hover ::before,
+  nav.navbar .nav-pills .nav-item .nav-link .active::before{
+  width: 40px;
+  }
+ /* end nav */
+
+ /* start home */
+ 
+ .home .text span{
+ color: #17b978;
+ font-weight: 700;
+  }
+.home .text h1{
+    color: #051441;
+    font-size: 70px;
+    font-weight: 900;
+}
+.home .text .btn{
+    background-color: var(--green-color);
+
+}
+.home .text .btn:hover{
+  background-color: red; 
+}
+
+ /* end home */
+
+ /* start room*/
+
+ 
+ /* end room */
+
